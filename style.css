@@ -13,17 +13,51 @@
   margin-top: 20px;
 }
 
-img { 
-  width: 200px;    /* abderreazak */  
-  height: 200px;     
-  object-fit: cover; 
-  border: 2px solid #ccc; 
-  margin: 10px; 
-  border-radius: 10px;
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
-
 
 .tree-image {
   width: 300px;    
   height: 300px;
+  object-fit: cover; 
+  border: 2px solid #ccc; 
+  border-radius: 10px;
+}
+/* marwan added this and */
+.like-button {
+  width: 300px;                /* Same width as .tree-image */
+  height: 40px;                /* Adjust height as needed */
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(
+    45deg,
+    #FF4500,  /* Vibrant orange-red */
+    #FF0000   /* Strong red */
+  );
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.like-button:hover {
+  background: linear-gradient(
+    45deg,
+    #FF6347,  /* Lighter coral-red */
+    #FF4500   /* Bright orange-red */
+  );
+  transform: translateY(-2px);  /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.like-button:active {
+  transform: translateY(0);     /* Reset lift when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
